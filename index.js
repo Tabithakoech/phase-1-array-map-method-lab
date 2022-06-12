@@ -14,12 +14,12 @@ const tutorials = [
 const titleCased = () => {
 
   return tutorials.map((array) => {
-      const arArray = array.split(' ');
-      const arNew = arArray.map((string) => {
+      const array1 = array.split(' ');
+      const arrayNew = array1.map((string) => {
           string = `${string[0].toUpperCase()}${string.slice(1)}`;
           return string;
       })
-      return arNew.join(" ");
+      return arrayNew.join(" ");
   })
   return tutorials
 }
